@@ -127,7 +127,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1345,91" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="Error" Message="[&quot;Hola :( &quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1345,91" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="Error" Message="[&quot;Siempre si se pudo&quot;]" />
     <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="1345,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
     <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="1345,55" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
     <Sequence DisplayName="Build Output Data Table" sap:VirtualizedContainerService.HintSize="1345,8390" sap2010:WorkflowViewState.IdRef="Sequence_2">
