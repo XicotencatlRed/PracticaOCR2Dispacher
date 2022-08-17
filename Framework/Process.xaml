@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1377,8976</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1377,8845</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -113,7 +113,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1387,8911" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1387,8780" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Double" Default="0" Name="PrincipalBalance" />
       <Variable x:TypeArguments="x:Double" Default="0" Name="ServiceFees" />
@@ -129,7 +129,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="1345,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
     <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="1345,55" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <Sequence DisplayName="Build Output Data Table" sap:VirtualizedContainerService.HintSize="1345,8521" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Build Output Data Table" sap:VirtualizedContainerService.HintSize="1345,8390" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="InvestorCode" />
         <Variable x:TypeArguments="x:String" Name="LoanNumber" />
@@ -144,7 +144,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Read_PDF_With_OCR" sap:VirtualizedContainerService.HintSize="1303,8429" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence DisplayName="Read_PDF_With_OCR" sap:VirtualizedContainerService.HintSize="1303,8298" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="PDFinfo" />
           <Variable x:TypeArguments="x:String" Name="Numbers" />
@@ -173,7 +173,6 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1261,91" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="Info" Message="[&quot;Hola amigos&quot;]" />
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1261,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Leyendo PDF....&quot;]" />
         <p:DigitizeDocument DocumentObjectModel="{x:Null}" ApplyOcrMigrated="True" ApplyOcrOnPdf="Auto" DegreeOfParallelism="-1" DetectCheckboxes="True" DisplayName="Digitize Document" DocumentPath="C:\Users\emxcdcd32sw1\Desktop\RPA - Leader Bank.pdf" DocumentText="[PDFdata]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="1261,293" sap2010:WorkflowViewState.IdRef="DigitizeDocument_1">
           <p:DigitizeDocument.OCREngine>
@@ -667,7 +666,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[&quot;Suma de Unpaid Balance Correcta&quot;  + convert.ToString(TotalUnpiadPrincipal)]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[&quot;Suma de Unpaid Balance Correcta: &quot;  + convert.ToString(TotalUnpiadPrincipal)]" />
             </Sequence>
           </If.Then>
           <If.Else>
